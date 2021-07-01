@@ -12,8 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-
-
 @interface LBJTableView : UITableView
 
 @property (nonatomic,retain) NSMutableArray * _Nullable formItems;

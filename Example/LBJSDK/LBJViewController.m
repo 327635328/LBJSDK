@@ -9,8 +9,9 @@
 #import "LBJViewController.h"
 
 #import "Masonry.h"
-#import "LBJTableView.h"
+//#import "LBJTableView.h"
 #import "HQSetTableViewCell.h"
+#import "LBJSDK.h"
 @interface LBJViewController ()
 @property (nonatomic,retain) LBJTableView * tableView;
 @end
@@ -23,9 +24,11 @@
     self.view.backgroundColor = [UIColor yellowColor];
   
     UIView * view = [UIView new];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
+    view.backgroundColor = [UIColor lbj_RandomColor];
+    view.backgroundColor = [UIColor lbj_colorWithHexString:@"#999999"];
+    view.backgroundColor = [UIColor lbj_colorWithHexString:@"#999999" alpha:0.6];
     
+    [self.view addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(0);
         make.size.mas_equalTo(CGSizeMake(100, 100));
@@ -51,7 +54,7 @@
     viewModel_about.didSelectedHandler = ^(id  _Nonnull obj) {
         NSLog(@"我点击了");
     };
-    [self.tableView.formItems addObject:@[viewModel_about]];
+    [self.tableView.formItems addObject:viewModel_about];
     
     
     HQSetTableViewCellVM * viewModel_cache = [[HQSetTableViewCellVM alloc]init];
@@ -61,7 +64,7 @@
     viewModel_cache.cacheBlock = ^{
         NSLog(@"我点击了");
     };
-    [self.tableView.formItems addObject:@[viewModel_cache]];
+    [self.tableView.formItems addObject:viewModel_cache];
     
     
     
