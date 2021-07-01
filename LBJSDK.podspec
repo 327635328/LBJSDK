@@ -30,19 +30,19 @@ TODO: ObjC各种通用类库
 
   s.ios.deployment_target = '9.0'
 
-  #s.source_files = 'LBJSDK/Classes/**/*'
+  s.source_files = 'LBJSDK/Classes/**/*'
   
-  s.source_files = 'LBJSDK/Classes/LBJSDK.h'
-  s.public_header_files = 'LBJSDK/Classes/LBJSDK.h'
+  #s.source_files = 'LBJSDK/Classes/LBJSDK.h'
+  #s.public_header_files = 'LBJSDK/Classes/LBJSDK.h'
   
-  s.subspec 'LBJTableView' do |ss|
-    ss.source_files = 'LBJSDK/Classes/LBJTableView/**/*'
-    ss.public_header_files = 'LBJSDK/Classes/LBJTableView/*.h'
-  end
-  s.subspec 'LBJUIKit' do |ss|
-    ss.source_files = 'LBJSDK/Classes/LBJUIKit/**/*'
-    ss.public_header_files = 'LBJSDK/Classes/LBJUIKit/*.h'
-  end
+  #s.subspec 'LBJTableView' do |ss|
+  #  ss.source_files = 'LBJSDK/Classes/LBJTableView/**/*'
+  #  ss.public_header_files = 'LBJSDK/Classes/LBJTableView/*.h'
+  #end
+  #s.subspec 'LBJUIKit' do |ss|
+  #  ss.source_files = 'LBJSDK/Classes/LBJUIKit/**/*'
+  #  ss.public_header_files = 'LBJSDK/Classes/LBJUIKit/*.h'
+  #end
   
   # s.resource_bundles = {
   #   'LBJSDK' => ['LBJSDK/Assets/*.png']
