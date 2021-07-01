@@ -7,7 +7,7 @@
 //
 
 #import "LBJViewController.h"
-
+#import "LBJObject.h"
 @interface LBJViewController ()
 
 @end
@@ -17,6 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
+    LBJObject * obj = [[LBJObject alloc]init];
+    [obj showTest];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
