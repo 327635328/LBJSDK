@@ -8,6 +8,12 @@ target 'LBJSDK_Example' do
   target 'LBJSDK_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+  pod 'FBSnapshotTestCase'
+  pod 'AFNetworking'
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'ReactiveObjC'
+  pod 'SDWebImage'
   end
 end

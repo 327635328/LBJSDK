@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		842C3F6F268D73910060D901 /* UIColor+HQHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C3F6D268D73910060D901 /* UIColor+HQHexColor.m */; };
+		842C3F74268D74C80060D901 /* HQSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C3F73268D74C80060D901 /* HQSetTableViewCell.m */; };
+		842C3F85268D785A0060D901 /* LBJTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C3F84268D785A0060D901 /* LBJTableViewHeaderFooterView.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D5154C5E07953410C6C47D65 /* Pods_LBJSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC6AA467344DCA46EEB4F32 /* Pods_LBJSDK_Example.framework */; };
 		EE1324C7E8F08D7E9496CD2C /* Pods_LBJSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B854EFF8F51CAAAD55395128 /* Pods_LBJSDK_Tests.framework */; };
@@ -60,6 +63,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		842C3F6D268D73910060D901 /* UIColor+HQHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HQHexColor.m"; sourceTree = "<group>"; };
+		842C3F6E268D73910060D901 /* UIColor+HQHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HQHexColor.h"; sourceTree = "<group>"; };
+		842C3F72268D74C80060D901 /* HQSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQSetTableViewCell.h; sourceTree = "<group>"; };
+		842C3F73268D74C80060D901 /* HQSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQSetTableViewCell.m; sourceTree = "<group>"; };
+		842C3F83268D785A0060D901 /* LBJTableViewHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBJTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		842C3F84268D785A0060D901 /* LBJTableViewHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBJTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9883687973152D6FD6CE6C02 /* Pods-LBJSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBJSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-LBJSDK_Example/Pods-LBJSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B70F565BB4BB08D7881D6687 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -137,6 +146,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LBJViewController.h */,
 				6003F5A6195388D20070C39A /* LBJViewController.m */,
+				842C3F83268D785A0060D901 /* LBJTableViewHeaderFooterView.h */,
+				842C3F84268D785A0060D901 /* LBJTableViewHeaderFooterView.m */,
+				842C3F72268D74C80060D901 /* HQSetTableViewCell.h */,
+				842C3F73268D74C80060D901 /* HQSetTableViewCell.m */,
+				842C3F6E268D73910060D901 /* UIColor+HQHexColor.h */,
+				842C3F6D268D73910060D901 /* UIColor+HQHexColor.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -347,11 +362,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LBJSDK_Example/Pods-LBJSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LBJSDK/LBJSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBJSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,10 +392,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LBJSDK_Tests/Pods-LBJSDK_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,9 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842C3F6F268D73910060D901 /* UIColor+HQHexColor.m in Sources */,
 				6003F59E195388D20070C39A /* LBJAppDelegate.m in Sources */,
+				842C3F74268D74C80060D901 /* HQSetTableViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* LBJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				842C3F85268D785A0060D901 /* LBJTableViewHeaderFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
