@@ -10,8 +10,7 @@
 #ifndef LBJSDK_h
 #define LBJSDK_h
 
-#import "LBJTableView.h"
-#import "LBJTableViewCell.h"
-
+#import "LBJTableViewMacros.h"
+#import "UIKit+LBJMacros.h"
 
 #endif /* LBJSDK_h */
