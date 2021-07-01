@@ -22,7 +22,45 @@ pod 'LBJSDK'
 
 ## Author
 
-x1248399884@163.com, x128399884@163.com
+
+1.LBJTableView
+
+```
+  [self.view addSubview:self.tableView];
+  
+  [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.left.right.top.mas_equalTo(0);
+    make.bottom.mas_equalTo(0);
+  }];
+  
+  self.tableView.registerClassDictionary = @{
+    [HQSetTableViewCellVM reuseCellIdentifier] : [HQSetTableViewCell class],
+  };
+  
+  HQSetTableViewCellVM * viewModel = [[HQSetTableViewCellVM alloc]init];
+  viewModel.title = @"名称";
+  viewModel.showBottomLine = YES;
+  viewModel.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+  viewModel.didSelectedHandler = ^(id _Nonnull obj) {
+    NSLog(@"我点击了");
+  };
+  
+  [self.tableView.formItems addObject:viewModel];
+```
+
+2.LBJUIKit
+
+```
+view.backgroundColor = [UIColor lbj_RandomColor];
+
+view.backgroundColor = [UIColor lbj_colorWithHexString:@"#999999"];
+
+view.backgroundColor = [UIColor lbj_colorWithHexString:@"#999999" alpha:0.6];
+```
+
+
+
+
 
 ## License
 
